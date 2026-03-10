@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SistemaCuentasPorPagarAPI.Models
+namespace Sistema_Documentos_por_Pagar.Models
 {
     public class Proveedor
     {
@@ -10,7 +10,7 @@ namespace SistemaCuentasPorPagarAPI.Models
         public string ?TipoPersona { get; set; }
         public string ?CedulaRNC { get; set; }
         public decimal ?Balance { get; set; }
-        public Boolean ?Estado { get; set; }
+        public bool? Estado { get; set; }
 
 
     }
