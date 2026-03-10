@@ -1,5 +1,11 @@
-var builder = WebApplication.CreateBuilder(args);
+using Sistema_Documentos_por_Pagar.Data;
+using Microsoft.EntityFrameworkCore;
 
+var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

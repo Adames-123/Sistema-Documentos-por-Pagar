@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SistemaCuentasPorPagarAPI.Models
+namespace Sistema_Documentos_por_Pagar.Models
 {
     public class DocumentoPorPagar
 

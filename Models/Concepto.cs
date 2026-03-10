@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SistemaCuentasPorPagarAPI.Models
+namespace Sistema_Documentos_por_Pagar.Models
 {
     public class Concepto
     {
